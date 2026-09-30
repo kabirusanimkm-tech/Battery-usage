@@ -3,77 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Install Unknown Apps</title>
+    <title>Android Quick Settings</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f6f9;
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .btn {
+            display: block;
+            padding: 14px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 8px;
+            font-weight: bold;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
-<body style="font-family: sans-serif; text-align: center; padding-top: 50px;">
-    <h2>Install Unknown Apps</h2>
-    <p>Danna maballin da ke kasa don bude shafin ba da izinin shigar da manhajoji.</p>
-    <a href="intent:#Intent;action=android.settings.MANAGE_UNKNOWN_APP_SOURCES;end" 
-       style="display: inline-block; padding: 14px 28px; background-color: #007bff; color: white; text-decoration: none; font-size: 18px; border-radius: 8px; font-weight: bold;">
-       Bude Install Unknown Apps
-    </a>
-</body>
-</html> <!DOCTYPE html>
-<html lang="ha">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wallpaper Settings</title>
-</head>
-<body style="font-family: sans-serif; text-align: center; padding-top: 50px;">
-    <h2>Android Wallpaper Settings</h2>
-    <p>Danna maballin da ke kasa don bude shafin saita fuskar wayarka.</p>
-    <a href="intent:#Intent;action=android.intent.action.SET_WALLPAPER;end" 
-       style="display: inline-block; padding: 14px 28px; background-color: #007bff; color: white; text-decoration: none; font-size: 18px; border-radius: 8px; font-weight: bold;">
-       Bude Wallpaper Settings
-    </a>
-</body>
-</html> <!DOCTYPE html>
-<html lang="ha">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Camera App</title>
-</head>
-<body style="font-family: sans-serif; text-align: center; padding-top: 50px;">
-    <h2>Android Camera</h2>
-    <p>Danna maballin da ke kasa don bude manhajar kyamarar wayarka.</p>
-    <a href="intent:#Intent;action=android.media.action.IMAGE_CAPTURE;end" 
-       style="display: inline-block; padding: 14px 28px; background-color: #007bff; color: white; text-decoration: none; font-size: 18px; border-radius: 8px; font-weight: bold;">
-       Bude Camera App
-    </a>
-</body>
-</html> <!DOCTYPE html>
-<html lang="ha">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Phone Settings</title>
-</head>
-<body style="font-family: sans-serif; text-align: center; padding-top: 50px;">
-    <h2>Android About Phone</h2>
-    <p>Danna maballin da ke kasa don bude shafin About Phone na wayarka.</p>
-    <a href="intent:#Intent;action=android.settings.DEVICE_INFO_SETTINGS;end" 
-       style="display: inline-block; padding: 14px 28px; background-color: #007bff; color: white; text-decoration: none; font-size: 18px; border-radius: 8px; font-weight: bold;">
-       Bude About Phone
-    </a>
-</body>
-</html> <!DOCTYPE html>
-<html lang="ha">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Always On Display Settings</title>
-</head>
-<body style="font-family: sans-serif; text-align: center; padding-top: 50px;">
-    <h2>Android Always On Display</h2>
-    <p>Danna maballin da ke kasa don bude shafin saita Always On Display na wayarka.</p>
-    <a href="intent:#Intent;action=android.settings.DOZE_SETTINGS;end" 
-       style="display: inline-block; padding: 14px 28px; background-color: #007bff; color: white; text-decoration: none; font-size: 18px; border-radius: 8px; font-weight: bold;">
-       Bude Always On Display
-    </a>
+<body>
+
+    <h2>Android Quick Settings Launcher</h2>
+    <p>Zaɓi maɓallin da kake son buɗewa a wayarka:</p>
+
+    <div class="btn-container">
+        <a class="btn" href="intent:#Intent;action=android.settings.BATTERY_SAVER_SETTINGS;end">
+            1. Battery Saver
+        </a>
+        <a class="btn" href="intent:#Intent;action=android.settings.DEVICE_INFO_SETTINGS;end">
+            2. About Phone
+        </a>
+        <a class="btn" href="intent:#Intent;action=android.settings.MANAGE_UNKNOWN_APP_SOURCES;end">
+            3. Install Unknown Apps
+        </a>
+        <a class="btn" href="intent:#Intent;action=android.intent.action.SET_WALLPAPER;end">
+            4. Wallpaper Settings
+        </a>
+        <a class="btn" href="intent:#Intent;action=android.media.action.IMAGE_CAPTURE;end">
+            5. Camera App
+        </a>
+        <a class="btn" href="intent:#Intent;action=android.settings.DOZE_SETTINGS;end">
+            6. Always On Display
+        </a>
+        <a class="btn" href="intent:#Intent;action=android.settings.SECURITY_SETTINGS;end">
+            7. Lock Screen & Security
+        </a>
+        <a class="btn" href="intent:#Intent;action=android.settings.LOCATION_SOURCE_SETTINGS;end">
+            8. Location Services
+        </a>
+    </div>
+
 </body>
 </html>
+
 
 
 
