@@ -3,20 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Android App Settings</title>
+    <title>Battery Settings Links</title>
 </head>
-<body style="font-family: sans-serif; text-align: center; padding-top: 50px;">
-    <h2>Saitin Apps Na Android</h2>
-    <p>Zaɓi maballin da kake son amfani da shi:</p>
-    
-    <!-- Maballin Google Play Services -->
+<body>
+
+    <h2>Saitunan Baturi (Battery Settings)</h2>
+
+    <!-- 1. Battery Usage -->
     <p>
-        <a href="intent:#Intent;action=android.settings.APPLICATION_DETAILS_SETTINGS;package=com.google.android.gms;end" style="display: inline-block; padding: 12px 24px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">Bude Google Play Services</a>
+        <a href="intent:#Intent;action=android.intent.action.POWER_USAGE_SUMMARY;end">
+            Buɗe Battery Usage
+        </a>
     </p>
 
-    <!-- Maballin Jerin Apps -->
+    <!-- 2. Battery Saver -->
     <p>
-        <a href="intent:#Intent;action=android.settings.MANAGE_APPLICATIONS_SETTINGS;end" style="display: inline-block; padding: 12px 24px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">Bude Jerin Apps</a>
+        <a href="intent:#Intent;action=android.settings.BATTERY_SAVER_SETTINGS;end">
+            Buɗe Battery Saver
+        </a>
     </p>
+
+    <!-- 3. General Battery Settings -->
+    <p>
+        <a href="intent:#Intent;action=android.settings.BATTERY_SETTINGS;end">
+            Buɗe Battery Settings
+        </a>
+    </p>
+
 </body>
 </html>
