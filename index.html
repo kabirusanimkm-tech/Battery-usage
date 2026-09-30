@@ -60,7 +60,66 @@
     </div>
 
 </body>
+</html> <!DOCTYPE html>
+<html lang="ha">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Android Battery & Special Access Settings</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f6f9;
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .btn {
+            display: block;
+            padding: 14px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 8px;
+            font-weight: bold;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Android Battery & Access Settings</h2>
+    <p>Zaɓi maɓallin da kake son buɗewa:</p>
+
+    <div class="btn-container">
+        <a class="btn" href="intent:#Intent;action=android.intent.action.POWER_USAGE_SUMMARY;end">
+            1. App Battery Usage
+        </a>
+        <a class="btn" href="intent:#Intent;action=android.settings.IGNORE_BATTERY_OPTIMIZATION_SETTINGS;end">
+            2. Set Battery Usage (Optimization)
+        </a>
+        <a class="btn" href="intent:#Intent;action=android.settings.SPECIAL_APP_ACCESS_SETTINGS;end">
+            3. Special App Access
+        </a>
+    </div>
+
+</body>
 </html>
+
 
 
 
