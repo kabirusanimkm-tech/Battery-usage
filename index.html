@@ -192,79 +192,33 @@
 </a><!-- 1. Shafin System Navigation / Gestures -->
 <a href="intent:#Intent;action=android.settings.SYSTEM_NAVIGATION_SETTINGS;end">
    Open System Navigation
-</a>
-
-<br><br>
-
-<!-- 2. Alternative Intent (Settings Search / Display Gestures) -->
-<a href="intent:#Intent;action=android.settings.DISPLAY_SETTINGS;end">
-   Open Display Settings
-</a>
-
-<br><br>
-
-<!-- 3. Direct Scheme for Navigation Settings -->
-<a href="intent://settings/system_navigation#Intent;scheme=android-app;action=android.settings.SYSTEM_NAVIGATION_SETTINGS;end">
-   Open System Navigation (Alternative Scheme)
-</a><!-- 1. Babban Shafin Developer Options -->
-<a href="intent:#Intent;action=android.settings.APPLICATION_DEVELOPMENT_SETTINGS;end">
-   Open Developer Options
-</a>
-
-<br><br>
-
-<!-- 2. Hanyar Component Direct (Settings Package) -->
-<a href="intent:#Intent;component=com.android.settings/.Settings$DevelopmentSettingsActivity;end">
-   Open Developer Options (Direct Component)
-</a>
-
-<br><br>
-
-<!-- 3. Direct Scheme for Developer Options -->
-<a href="intent://settings/development#Intent;scheme=android-app;action=android.settings.APPLICATION_DEVELOPMENT_SETTINGS;end">
-   Open Developer Options (Alternative Scheme)
 </a><!DOCTYPE html>
 <html lang="ha">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bude Settings</title>
+    <title>special access</title>
     <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: sans-serif;
-        }
-        button {
-            padding: 15px 30px;
-            font-size: 18px;
-            background-color: #4CAF50;
+        body { font-family: sans-serif; text-align: center; margin-top: 50px; }
+        .btn {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: #007bff;
             color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #45a049;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
 
-    <button onclick="budeSettings()">Bude Settings na Wayar Ka</button>
+    <h3>Special Access</h3>
 
-    <script>
-        function budeSettings() {
-            // Wannan shi ne Intent URI don bude babban shafin Settings
-            const settingsIntent = "intent://#Intent;action=android.settings.SETTINGS;end";
-            
-            // Aika umarnin bude shi a browser
-            window.location.href = settingsIntent;
-        }
-    </script>
+    <a href="intent:#Intent;action=android.settings.SETTINGS;end" class="btn">
+        Open System Settings
+    </a>
+
 </body>
 </html>
 
