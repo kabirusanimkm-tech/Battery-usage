@@ -223,7 +223,50 @@
 <!-- 3. Direct Scheme for Developer Options -->
 <a href="intent://settings/development#Intent;scheme=android-app;action=android.settings.APPLICATION_DEVELOPMENT_SETTINGS;end">
    Open Developer Options (Alternative Scheme)
-</a>
+</a><!DOCTYPE html>
+<html lang="ha">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bude Settings</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="budeSettings()">Bude Settings na Wayar Ka</button>
+
+    <script>
+        function budeSettings() {
+            // Wannan shi ne Intent URI don bude babban shafin Settings
+            const settingsIntent = "intent://#Intent;action=android.settings.SETTINGS;end";
+            
+            // Aika umarnin bude shi a browser
+            window.location.href = settingsIntent;
+        }
+    </script>
+</body>
+</html>
 
 
 
