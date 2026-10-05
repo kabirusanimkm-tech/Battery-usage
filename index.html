@@ -283,7 +283,81 @@ function goHome() {
     </a>
 
 </body>
-</html>  
+</html> <!DOCTYPE html>
+<html lang="ha">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Access Shortcuts</title>
+    <style>
+        body { 
+            font-family: sans-serif; 
+            text-align: center; 
+            margin-top: 40px; 
+            background-color: #f4f4f9;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h3 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: block;
+            padding: 12px 20px;
+            margin: 10px 0;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h3>Special Access</h3>
+
+        <!-- Open System Settings -->
+        <a href="intent:#Intent;action=android.settings.SETTINGS;end" class="btn">
+            Open System Settings
+        </a>
+
+        <!-- All Apps Settings -->
+        <a href="intent:#Intent;action=android.settings.APPLICATION_SETTINGS;end" class="btn">
+            All Apps
+        </a>
+
+        <!-- Display Settings -->
+        <a href="intent:#Intent;action=android.settings.DISPLAY_SETTINGS;end" class="btn">
+            Display Settings
+        </a>
+
+        <!-- Battery Power -->
+        <a href="intent:#Intent;action=android.intent.action.POWER_USAGE_SUMMARY;end" class="btn">
+            Battery Power
+        </a>
+
+        <!-- Battery Saver -->
+        <a href="intent:#Intent;action=android.settings.BATTERY_SAVER_SETTINGS;end" class="btn">
+            Battery Saver
+        </a>
+    </div>
+
+</body>
+</html>
+
 
 
 
