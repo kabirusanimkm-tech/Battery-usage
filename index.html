@@ -238,7 +238,52 @@ function goHome() {
     Go to Home Screen
 </a> <a href="intent:#Intent;action=android.intent.action.MAIN;category=android.intent.category.DEFAULT;end" class="btn">
     Open Default Launcher
-</a>
+</a> <!DOCTYPE html>
+<html lang="ha">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Access</title>
+    <style>
+        body { 
+            font-family: sans-serif; 
+            text-align: center; 
+            margin-top: 50px; 
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 20px;
+            margin: 10px 0;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            width: 200px;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Special Access</h3>
+
+    <!-- Maballin Bude All Apps -->
+    <a href="intent:#Intent;action=android.settings.APPLICATION_SETTINGS;end" class="btn">
+        All Apps
+    </a>
+
+    <br>
+
+    <!-- Maballin Bude Display Settings -->
+    <a href="intent:#Intent;action=android.settings.DISPLAY_SETTINGS;end" class="btn">
+        Display Settings
+    </a>
+
+</body>
+</html>  
 
 
 
