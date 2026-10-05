@@ -222,6 +222,20 @@
 </body>
 </html><a href="intent:#Intent;action=android.intent.action.MAIN;category=android.intent.category.HOME;end" class="btn">
     Go to Home Screen
+</a> <button onclick="goHome()" class="btn">Go to Home Screen</button>
+
+<script>
+function goHome() {
+    // Kokarin rufe shafin browser
+    window.close();
+    
+    // Idan window.close() bai yi aiki ba, yana komawa baya a history
+    setTimeout(function() {
+        window.history.back();
+    }, 100);
+}
+</script> <a href="intent://com.android.launcher/#Intent;scheme=android-app;action=android.intent.action.MAIN;category=android.intent.category.HOME;end" class="btn">
+    Go to Home Screen
 </a>
 
 
