@@ -358,6 +358,40 @@ function goHome() {
 </body>
 </html><a href="intent:#Intent;action=android.settings.MANAGE_DEFAULT_APPS_SETTINGS;end" class="btn" style="background-color: #28a745;">
     Default Apps
+</a><!-- 1. Babban Shafin Developer Options (USB Debugging na ciki) -->
+<a href="intent:#Intent;action=android.settings.APPLICATION_DEVELOPMENT_SETTINGS;end">
+   Open USB Debugging / Developer Options
+</a>
+
+<br><br>
+
+<!-- 2. Hanyar Direct Component zuwa Development Settings -->
+<a href="intent:#Intent;component=com.android.settings/.Settings$DevelopmentSettingsDashboardActivity;end">
+   Open USB Debugging (Dashboard Direct)
+</a>
+
+<br><br>
+
+<!-- 3. Direct Scheme for Development Settings -->
+<a href="intent://settings/development#Intent;scheme=android-app;action=android.settings.APPLICATION_DEVELOPMENT_SETTINGS;end">
+   Open USB Debugging (Alternative Scheme)
+</a><!-- 1. Babban Shafin Display Settings -->
+<a href="intent:#Intent;action=android.settings.DISPLAY_SETTINGS;end">
+   Open Display Settings
+</a>
+
+<br><br>
+
+<!-- 2. Hanyar Direct Component zuwa Display Settings -->
+<a href="intent:#Intent;component=com.android.settings/.Settings$DisplaySettingsActivity;end">
+   Open Display Settings (Direct Component)
+</a>
+
+<br><br>
+
+<!-- 3. Direct Scheme for Display Settings -->
+<a href="intent://settings/display#Intent;scheme=android-app;action=android.settings.DISPLAY_SETTINGS;end">
+   Open Display Settings (Alternative Scheme)
 </a>
 
 
