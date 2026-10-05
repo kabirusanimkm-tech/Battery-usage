@@ -426,6 +426,23 @@ function goHome() {
 <!-- 3. Direct Scheme for Storage Settings -->
 <a href="intent://settings/storage#Intent;scheme=android-app;action=android.settings.INTERNAL_STORAGE_SETTINGS;end">
    Open Storage Settings (Alternative Scheme)
+</a> <!-- 1. Babban Shafin Manage Unknown App Sources (Install APK) -->
+<a href="intent:#Intent;action=android.settings.MANAGE_UNKNOWN_APP_SOURCES;end">
+   Open Install Unknown Apps Settings
+</a>
+
+<br><br>
+
+<!-- 2. Hanyar Direct Component zuwa App Install Activity -->
+<a href="intent:#Intent;component=com.android.settings/.Settings$ManageAppExternalSourcesActivity;end">
+   Open Install APK Settings (Direct Component)
+</a>
+
+<br><br>
+
+<!-- 3. Direct Scheme for Unknown App Sources -->
+<a href="intent://settings/unknown_sources#Intent;scheme=android-app;action=android.settings.MANAGE_UNKNOWN_APP_SOURCES;end">
+   Open Install Unknown Apps (Alternative Scheme)
 </a>
 
 
