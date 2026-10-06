@@ -477,7 +477,16 @@ function goHome() {
 <!-- 3. Direct Scheme for About Device Settings -->
 <a href="intent://settings/about#Intent;scheme=android-app;action=android.settings.DEVICE_INFO_SETTINGS;end">
    Open About Phone (Alternative Scheme)
+</a><a href="intent:#Intent;action=android.settings.DEVICE_INFO_SETTINGS;end">
+   Open Device Info
+</a><a href="intent:#Intent;component=com.android.settings/.Settings$DeviceInfoSettingsActivity;end">
+   Open Device Info (Direct Component)
+</a><a href="intent://settings/device_info#Intent;scheme=android-app;action=android.settings.DEVICE_INFO_SETTINGS;end">
+   Open Device Info (Alternative)
 </a>
+
+
+
 
 
 
