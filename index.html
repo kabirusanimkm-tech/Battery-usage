@@ -156,7 +156,25 @@
 <!-- 2. Go to Android OS Info (Alternative Scheme) -->
 <a href="javascript:void(0)" onclick="window.location.href='intent:#Intent;action=android.settings.DEVICE_INFO_SETTINGS;category=android.intent.category.DEFAULT;end'">
    Go to Operating System Info
-</a>  
+</a><!-- 1. Take me to File Manager / Storage -->
+<a href="javascript:void(0)" onclick="window.location.href='intent:#Intent;action=android.settings.INTERNAL_STORAGE_SETTINGS;category=android.intent.category.DEFAULT;end'">
+   Take me to File Manager
+</a>
+
+<br><br>
+
+<!-- 2. Go to File Manager (Files App Direct) -->
+<a href="javascript:void(0)" onclick="window.location.href='intent:#Intent;action=android.intent.action.VIEW;type=*/*;category=android.intent.category.DEFAULT;end'">
+   Go to Files App
+</a>
+
+<br><br>
+
+<!-- 3. Take me to Storage & Files (Alternative Scheme) -->
+<a href="javascript:void(0)" onclick="window.location.href='intent:#Intent;component=com.google.android.documentsui/com.android.documentsui.files.FilesActivity;category=android.intent.category.DEFAULT;end'">
+   Take me to Storage Files
+</a>
+  
 
 
 
