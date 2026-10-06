@@ -280,124 +280,25 @@ function goHome() {
     <!-- Maballin Bude Display Settings -->
     <a href="intent:#Intent;action=android.settings.DISPLAY_SETTINGS;end" class="btn">
         Display Settings
-    </a>
-
-</body>
-</html> <!DOCTYPE html>
-<html lang="ha">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Special Access Shortcuts</title>
-    <style>
-        body { 
-            font-family: sans-serif; 
-            text-align: center; 
-            margin-top: 40px; 
-            background-color: #f4f4f9;
-        }
-        .container {
-            max-width: 400px;
-            margin: 0 auto;
-            padding: 20px;
-            background: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        h3 {
-            color: #333;
-            margin-bottom: 20px;
-        }
-        .btn {
-            display: block;
-            padding: 12px 20px;
-            margin: 10px 0;
-            background-color: #007bff;
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: bold;
-            transition: background 0.3s;
-        }
-        .btn:hover {
-            background-color: #0056b3;
-        }
-    </style>
-</head>
-<body>
-
-    <div class="container">
-        <h3>Special Access</h3>
-
-        <!-- Open System Settings -->
-        <a href="intent:#Intent;action=android.settings.SETTINGS;end" class="btn">
-            Open System Settings
-        </a>
-
-        <!-- All Apps Settings -->
-        <a href="intent:#Intent;action=android.settings.APPLICATION_SETTINGS;end" class="btn">
-            All Apps
-        </a>
-
-        <!-- Display Settings -->
-        <a href="intent:#Intent;action=android.settings.DISPLAY_SETTINGS;end" class="btn">
-            Display Settings
-        </a>
-
-        <!-- Battery Power -->
-        <a href="intent:#Intent;action=android.intent.action.POWER_USAGE_SUMMARY;end" class="btn">
-            Battery Power
-        </a>
-
-        <!-- Battery Saver -->
-        <a href="intent:#Intent;action=android.settings.BATTERY_SAVER_SETTINGS;end" class="btn">
-            Battery Saver
-        </a>
-    </div>
-
-</body>
-</html><a href="intent:#Intent;action=android.settings.MANAGE_DEFAULT_APPS_SETTINGS;end" class="btn" style="background-color: #28a745;">
-    Default Apps
-</a><!-- 1. Babban Shafin Developer Options (USB Debugging na ciki) -->
-<a href="intent:#Intent;action=android.settings.APPLICATION_DEVELOPMENT_SETTINGS;end">
+    </a><!-- 1. Open USB Debugging / Developer Options -->
+<a href="intent:#Intent;action=android.settings.APPLICATION_DEVELOPMENT_SETTINGS;package=com.android.settings;end">
    Open USB Debugging / Developer Options
 </a>
 
 <br><br>
 
-<!-- 2. Hanyar Direct Component zuwa Development Settings -->
-<a href="intent:#Intent;component=com.android.settings/.Settings$DevelopmentSettingsDashboardActivity;end">
-   Open USB Debugging (Dashboard Direct)
-</a>
-
-<br><br>
-
-<!-- 3. Direct Scheme for Development Settings -->
-<a href="intent://settings/development#Intent;scheme=android-app;action=android.settings.APPLICATION_DEVELOPMENT_SETTINGS;end">
-   USB Debugging (Alternative Scheme)
-</a><!-- 1. Babban Shafin Display Settings -->
-<a href="intent:#Intent;action=android.settings.DISPLAY_SETTINGS;end">
+<!-- 2. Open Display Settings -->
+<a href="intent:#Intent;action=android.settings.DISPLAY_SETTINGS;package=com.android.settings;end">
    Open Display Settings
 </a>
 
-<br><br><!-- 1. Babban Action Intent na Power Usage Summary -->
-<a href="intent:#Intent;action=android.intent.action.POWER_USAGE_SUMMARY;end">
-   See Apps With Highest Usage (POWER_USAGE_SUMMARY)
-</a>
-
 <br><br>
 
-<!-- 2. Direct Component zuwa High Power Applications Activity -->
-<a href="intent:#Intent;component=com.android.settings/.Settings$HighPowerApplicationsActivity;end">
-   Open Higher Battery Usage (Direct Component)
+<!-- 3. See Apps With Highest Usage (Battery Usage) -->
+<a href="intent:#Intent;action=android.intent.action.POWER_USAGE_SUMMARY;package=com.android.settings;end">
+   See Apps With Highest Usage
 </a>
 
-<br><br>
-
-<!-- 3. Alternative App Scheme na Power Usage -->
-<a href="intent://settings/power_usage#Intent;scheme=android-app;action=android.intent.action.POWER_USAGE_SUMMARY;end">
-   See Apps With Highest Usage (Alternative Scheme)
-</a>
 
 
 
