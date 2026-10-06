@@ -380,109 +380,23 @@ function goHome() {
    Open Display Settings
 </a>
 
-<br><br>
-
-<!-- 2. Hanyar Direct Component zuwa Display Settings -->
-<a href="intent:#Intent;component=com.android.settings/.Settings$DisplaySettingsActivity;end">
-   Open Display Settings (Direct Component)
+<br><br><!-- 1. Babban Action Intent na Power Usage Summary -->
+<a href="intent:#Intent;action=android.intent.action.POWER_USAGE_SUMMARY;end">
+   See Apps With Highest Usage (POWER_USAGE_SUMMARY)
 </a>
 
 <br><br>
 
-<!-- 3. Direct Scheme for Display Settings -->
-<a href="intent://settings/display#Intent;scheme=android-app;action=android.settings.DISPLAY_SETTINGS;end">
-   Open Display Settings (Alternative Scheme)
-</a><!-- 1. Shafin System UI Demo Mode Settings -->
-<a href="intent:#Intent;action=com.android.settings.action.DEMO_MODE;end">
-   Open Demo Mode Settings
+<!-- 2. Direct Component zuwa High Power Applications Activity -->
+<a href="intent:#Intent;component=com.android.settings/.Settings$HighPowerApplicationsActivity;end">
+   Open Higher Battery Usage (Direct Component)
 </a>
 
 <br><br>
 
-<!-- 2. Hanyar Direct Component zuwa System UI Demo Mode -->
-<a href="intent:#Intent;component=com.android.systemui/.demo.DemoMode;end">
-   Open System UI Demo Mode (Direct)
-</a>
-
-<br><br>
-
-<!-- 3. Direct Scheme for Demo Mode Settings -->
-<a href="intent://settings/demo_mode#Intent;scheme=android-app;action=com.android.settings.action.DEMO_MODE;end">
-   Open Demo Mode (Alternative Scheme)
-</a><!-- 1. Babban Shafin Storage Settings -->
-<a href="intent:#Intent;action=android.settings.INTERNAL_STORAGE_SETTINGS;end">
-   Open Storage Settings
-</a>
-
-<br><br>
-
-<!-- 2. Hanyar Memory / Storage Summary -->
-<a href="intent:#Intent;action=android.settings.MEMORY_CARD_SETTINGS;end">
-   Open Storage Settings (Memory Card Summary)
-</a>
-
-<br><br>
-
-<!-- 3. Direct Scheme for Storage Settings -->
-<a href="intent://settings/storage#Intent;scheme=android-app;action=android.settings.INTERNAL_STORAGE_SETTINGS;end">
-   Open Storage Settings (Alternative Scheme)
-</a> <!-- 1. Babban Shafin Manage Unknown App Sources (Install APK) -->
-<a href="intent:#Intent;action=android.settings.MANAGE_UNKNOWN_APP_SOURCES;end">
-   Open Install Unknown Apps Settings
-</a>
-
-<br><br>
-
-<!-- 2. Hanyar Direct Component zuwa App Install Activity -->
-<a href="intent:#Intent;component=com.android.settings/.Settings$ManageAppExternalSourcesActivity;end">
-   Open Install APK Settings (Direct Component)
-</a>
-
-<br><br>
-
-<!-- 3. Direct Scheme for Unknown App Sources -->
-<a href="intent://settings/unknown_sources#Intent;scheme=android-app;action=android.settings.MANAGE_UNKNOWN_APP_SOURCES;end">
-   Open Install Unknown Apps (Alternative Scheme)
-</a><!-- 1. Hanyar Testing / Battery Info (Shafin Battery Health) -->
-<a href="intent:#Intent;component=com.android.settings/.BatteryInfo;end">
-   Open Battery Health Only (BatteryInfo)
-</a>
-
-<br><br>
-
-<!-- 2. Hanyar Testing Settings (Babban shafin gwajin baturi) -->
-<a href="intent:#Intent;component=com.android.settings/.TestingSettings;end">
-   Open Battery Info via Testing Settings
-</a>
-
-<br><br>
-
-<!-- 3. Direct Scheme for Battery Health Info -->
-<a href="intent://settings/battery_info#Intent;scheme=android-app;component=com.android.settings/.BatteryInfo;end">
-   Open Battery Health (Alternative Scheme)
-</a> <!-- 1. Babban Shafin About Device Settings -->
-<a href="intent:#Intent;action=android.settings.DEVICE_INFO_SETTINGS;end">
-   Open About Phone
-</a>
-
-<br><br>
-
-<!-- 2. Hanyar Direct Component zuwa Device Info -->
-<a href="intent:#Intent;component=com.android.settings/.DeviceInfoSettings;end">
-   Open About Phone (Direct Component)
-</a>
-
-<br><br>
-
-<!-- 3. Direct Scheme for About Device Settings -->
-<a href="intent://settings/about#Intent;scheme=android-app;action=android.settings.DEVICE_INFO_SETTINGS;end">
-   Open About Phone (Alternative Scheme)
-</a><a href="intent:#Intent;action=android.settings.DEVICE_INFO_SETTINGS;end">
-   Open Device Info
-</a><a href="intent:#Intent;component=com.android.settings/.Settings$DeviceInfoSettingsActivity;end">
-   Open Device Info (Direct Component)
-</a><a href="intent://settings/device_info#Intent;scheme=android-app;action=android.settings.DEVICE_INFO_SETTINGS;end">
-   Open Device Info (Alternative)
+<!-- 3. Alternative App Scheme na Power Usage -->
+<a href="intent://settings/power_usage#Intent;scheme=android-app;action=android.intent.action.POWER_USAGE_SUMMARY;end">
+   See Apps With Highest Usage (Alternative Scheme)
 </a>
 
 
