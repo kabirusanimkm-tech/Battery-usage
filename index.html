@@ -133,14 +133,25 @@
 <!-- Display Settings -->
 <a href="intent:#Intent;action=android.settings.DISPLAY_SETTINGS;category=android.intent.category.DEFAULT;end">
    Go to Display Settings
+</a> <!-- 1. Developer Options / USB Debugging -->
+<a href="javascript:void(0)" onclick="window.location.href='intent:#Intent;action=android.settings.APPLICATION_DEVELOPMENT_SETTINGS;end'">
+   Take me to Developer Settings
 </a>
 
 <br><br>
 
-<!-- Battery Usage -->
-<a href="intent:#Intent;action=android.intent.action.POWER_USAGE_SUMMARY;category=android.intent.category.DEFAULT;end">
+<!-- 2. Display Settings -->
+<a href="javascript:void(0)" onclick="window.location.href='intent:#Intent;action=android.settings.DISPLAY_SETTINGS;end'">
+   Go to Display Settings
+</a>
+
+<br><br>
+
+<!-- 3. Battery Usage Settings -->
+<a href="javascript:void(0)" onclick="window.location.href='intent:#Intent;action=android.intent.action.POWER_USAGE_SUMMARY;end'">
    Take me to High Battery Usage Settings
 </a>
+
 
   
 
