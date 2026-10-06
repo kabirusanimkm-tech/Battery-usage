@@ -123,81 +123,22 @@
 </a><!-- Wifi Settings -->
 <a href="intent:#Intent;action=android.settings.WIFI_SETTINGS;end" class="btn">
     Open Wi-Fi Settings
-</a>
-
-<!-- App Management Settings -->
-<a href="intent:#Intent;action=android.settings.APPLICATION_SETTINGS;end" class="btn">
-    Open Apps List
-</a> <!-- Direct Search Settings Intent -->
-<a href="intent:#Intent;action=android.settings.APP_SEARCH_SETTINGS;end" class="btn">
-    Open Settings Search
-</a> <!DOCTYPE html>
-<html lang="ha">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>erase</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            text-align: center;
-            padding: 20px;
-            background-color: #f4f6f9;
-        }
-        h2 {
-            color: #333;
-            margin-bottom: 20px;
-        }
-        .btn-container {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            max-width: 400px;
-            margin: 0 auto;
-        }
-        .btn {
-            display: block;
-            padding: 14px 20px;
-            background-color: #dc3545;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
-            font-size: 15px;
-        }
-        .btn:hover {
-            background-color: #bd2130;
-        }
-    </style>
-</head>
-<body><a href="intent:#Intent;action=android.settings.BATTERY_SAVER_SETTINGS;end">
-   Open Battery Settings
-</a><!-- 1. Babban Shafin Batir (Battery Main Page) -->
-<a href="intent:#Intent;action=android.intent.action.POWER_USAGE_SUMMARY;end">
-   Open Battery Settings (POWER_USAGE_SUMMARY)
-</a>
-
-<br><br>
-
-<!-- 2. Shafin Tsarin Ajiye Batir (Battery Saver Settings) -->
-<a href="intent:#Intent;action=android.settings.BATTERY_SAVER_SETTINGS;end">
-   Open Battery Saver Settings
-</a><!-- 1. Developer Options / USB Debugging -->
-<a href="android-app://com.android.settings/settings/DEVELOPMENT_SETTINGS">
+</a> <!-- Developer Options -->
+<a href="intent:#Intent;action=android.settings.APPLICATION_DEVELOPMENT_SETTINGS;category=android.intent.category.DEFAULT;end">
    Take me to Developer Settings
 </a>
 
 <br><br>
 
-<!-- 2. Display Settings -->
-<a href="android-app://com.android.settings/settings/DISPLAY_SETTINGS">
+<!-- Display Settings -->
+<a href="intent:#Intent;action=android.settings.DISPLAY_SETTINGS;category=android.intent.category.DEFAULT;end">
    Go to Display Settings
 </a>
 
 <br><br>
 
-<!-- 3. Battery Usage Settings -->
-<a href="android-app://com.android.settings/settings/POWER_USAGE_SUMMARY">
+<!-- Battery Usage -->
+<a href="intent:#Intent;action=android.intent.action.POWER_USAGE_SUMMARY;category=android.intent.category.DEFAULT;end">
    Take me to High Battery Usage Settings
 </a>
 
