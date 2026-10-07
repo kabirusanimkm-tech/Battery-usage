@@ -3,265 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>access</title>
+    <title>Android Settings Dashboard</title>
     <style>
-        body { font-family: sans-serif; text-align: center; padding: 20px; }
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
         .btn {
-            display: inline-block;
-            padding: 12px 20px;
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
             background-color: #007bff;
             color: white;
+            text-align: center;
             text-decoration: none;
             border-radius: 6px;
             font-weight: bold;
         }
+        .btn:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
 
-    <h3>Special Access</h3>
-    
-    <a href="intent:#Intent;action=com.android.settings.APPLICATION_DEVELOPMENT_SETTINGS;end" class="btn">
-        Go Developer Options
+    <h2>Android Quick Settings</h2>
+
+    <!-- 1. Google Open Settings -->
+    <a class="btn" href="javascript:void(0)" onclick="window.location.href='intent:#Intent;action=com.google.android.gms.settings.GOOGLE_SETTINGS;category=android.intent.category.DEFAULT;end'">
+       Google Open Settings
+    </a>
+
+    <!-- 2. Wallpaper Settings -->
+    <a class="btn" href="javascript:void(0)" onclick="window.location.href='intent:#Intent;action=android.settings.WALLPAPER_SETTINGS;category=android.intent.category.DEFAULT;end'">
+       Wallpaper Settings
+    </a>
+
+    <!-- 3. Security & Screen Lock Settings -->
+    <a class="btn" href="javascript:void(0)" onclick="window.location.href='intent:#Intent;action=android.settings.SECURITY_SETTINGS;category=android.intent.category.DEFAULT;end'">
+       Security & Screen Lock
+    </a>
+
+    <!-- 4. Background Apps & Special Usage Settings -->
+    <a class="btn" href="javascript:void(0)" onclick="window.location.href='intent:#Intent;action=android.settings.IGNORE_BACKGROUND_DATA_RESTRICTIONS_SETTINGS;category=android.intent.category.DEFAULT;end'">
+       Background App & Battery Optimization
     </a>
 
 </body>
 </html>
-<!-- Maimakon wannan: -->
-<title>Android Quick Settings</title>
-
-<!-- Zaka maida shi zuwa: -->
-<title>Battery Health</title> <!DOCTYPE html>
-<html lang="ha">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>battery used</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            text-align: center;
-            padding: 20px;
-            background-color: #f4f6f9;
-        }
-        h2 {
-            color: #333;
-            margin-bottom: 20px;
-        }
-        .btn {
-            display: inline-block;
-            padding: 14px 24px;
-            background-color: #28a745;
-            color: #ffffff;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
-            font-size: 16px;
-        }
-    </style>
-</head>
-<body><!DOCTYPE html>
-<html lang="ha">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>show control center</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            text-align: center;
-            padding: 20px;
-            background-color: #f4f6f9;
-        }
-        h2 {
-            color: #333;
-            margin-bottom: 20px;
-        }
-        .btn-container {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            max-width: 400px;
-            margin: 0 auto;
-        }
-        .btn {
-            display: block;
-            padding: 14px 20px;
-            background-color: #17a2b8;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
-            font-size: 15px;
-        }
-        .btn:hover {
-            background-color: #138496;
-        }
-    </style>
-</head>
-<body>
-
-    <h2>Show Control Center</h2>
-
-    <div class="btn-container">
-        <a href="intent:#Intent;action=android.settings.NOTIFICATION_SETTINGS;end" class="btn">
-            Show Control Center
-        </a>
-    </div>
-
-</body>
-</html> <a href="intent:#Intent;action=android.settings.SETTINGS;package=com.android.settings;end" class="btn">
-    Open Settings (Explicit)
-</a> <!-- Wifi Settings -->
-<a href="intent:#Intent;action=android.settings.WIFI_SETTINGS;end" class="btn">
-    Open Wi-Fi Settings
-</a>
-
-<!-- Accessibility Settings -->
-<a href="intent:#Intent;action=android.settings.ACCESSIBILITY_SETTINGS;end" class="btn">
-    Open Accessibility
-</a><!-- Wifi Settings -->
-<a href="intent:#Intent;action=android.settings.WIFI_SETTINGS;end" class="btn">
-    Open Wi-Fi Settings
-</a> <!-- Developer Options -->
-<a href="intent:#Intent;action=android.settings.APPLICATION_DEVELOPMENT_SETTINGS;category=android.intent.category.DEFAULT;end">
-   Take me to Developer Settings
-</a>
-
-<br><br>
-
-<!-- Display Settings -->
-<a href="intent:#Intent;action=android.settings.DISPLAY_SETTINGS;category=android.intent.category.DEFAULT;end">
-   /Settings
-</a> <!-- 1. Developer Options / USB Debugging -->
-<a href="javascript:void(0)" onclick="window.location.href='intent:#Intent;action=android.settings.APPLICATION_DEVELOPMENT_SETTINGS;end'">
-   into Developer Settings
-</a>
-
-<!-- 2. Display Settings -->
-<a href="javascript:void(0)" onclick="window.location.href='intent:#Intent;action=android.settings.DISPLAY_SETTINGS;end'">
-   Go to Display Settings
-</a> <a href="javascript:void(0)" onclick="window.location.href='intent:#Intent;action=android.intent.action.POWER_USAGE_SUMMARY;category=android.intent.category.DEFAULT;end'">
-   Battery(Percentage)
-</a><!-- 1. Go to Pixel Settings / System Settings -->
-<a href="javascript:void(0)" onclick="window.location.href='intent:#Intent;action=android.settings.SETTINGS;category=android.intent.category.DEFAULT;end'">
-   Go to Pixel
-</a><!-- 1. Take me to Operating System / Android Version -->
-<a href="javascript:void(0)" onclick="window.location.href='intent:#Intent;component=com.android.settings/.Settings$BuildNumberSettingsActivity;category=android.intent.category.DEFAULT;end'">
-   Take me to Operating System
-</a>
-
-<br><br>
-
-<!-- 2. Go to Android OS Info (Alternative Scheme) -->
-<a href="javascript:void(0)" onclick="window.location.href='intent:#Intent;action=android.settings.DEVICE_INFO_SETTINGS;category=android.intent.category.DEFAULT;end'">
-   Go to Operating System Info
-</a><!-- 1. Take me to File Manager / Storage -->
-<a href="javascript:void(0)" onclick="window.location.href='intent:#Intent;action=android.settings.INTERNAL_STORAGE_SETTINGS;category=android.intent.category.DEFAULT;end'">
-   Take me to File Manager
-</a>
-
-<br><br>
-
-<!-- 2. Go to File Manager (Files App Direct) -->
-<a href="javascript:void(0)" onclick="window.location.href='intent:#Intent;action=android.intent.action.VIEW;type=*/*;category=android.intent.category.DEFAULT;end'">
-   Go to Files App
-</a>
-
-<br><br>
-
-<!-- 3. Take me to Storage & Files (Alternative Scheme) -->
-<a href="javascript:void(0)" onclick="window.location.href='intent:#Intent;component=com.google.android.documentsui/com.android.documentsui.files.FilesActivity;category=android.intent.category.DEFAULT;end'">
-   Take me to Storage Files
-</a><!-- 1. Take me to Hotspot Settings (Direct Action) -->
-<a href="javascript:void(0)" onclick="window.location.href='intent:#Intent;action=android.settings.TETHER_SETTINGS;category=android.intent.category.DEFAULT;end'">
-   Take me to Hotspot Settings
-</a>
-
-<br><br>
-
-<!-- 2. Go to Hotspot & Tethering (Direct Component) -->
-<a href="javascript:void(0)" onclick="window.location.href='intent:#Intent;component=com.android.settings/.TetherSettings;category=android.intent.category.DEFAULT;end'">
-   Go to Hotspot & Tethering
-</a>
-
-<br><br>
-
-<!-- 3. Take me to Network & Internet (Alternative) -->
-<a href="javascript:void(0)" onclick="window.location.href='intent:#Intent;action=android.settings.WIRELESS_SETTINGS;category=android.intent.category.DEFAULT;end'">
-   Take me to Network & Internet
-</a><!-- ================= SETTINGS SECTION ================= -->
-<h3>Settings Links</h3>
-
-<!-- 1. Take me to Main Settings -->
-<a href="javascript:void(0)" onclick="window.location.href='intent:#Intent;action=android.settings.SETTINGS;category=android.intent.category.DEFAULT;end'">
-   Take me to Main Settings
-</a>
-
-<br><br>
-
-<!-- 2. Go to System / Advanced Settings -->
-<a href="javascript:void(0)" onclick="window.location.href='intent:#Intent;action=android.settings.SYSTEM_ALERT_WINDOW_SETTINGS;category=android.intent.category.DEFAULT;end'">
-   Go to System Settings
-</a>
-
-<br><br>
-
-<!-- ================= BATTERY SECTION ================= -->
-<h3>Battery Links</h3>
-
-<!-- 3. Take me to Battery Usage / High Battery Apps -->
-<a href="javascript:void(0)" onclick="window.location.href='intent:#Intent;action=android.intent.action.POWER_USAGE_SUMMARY;category=android.intent.category.DEFAULT;end'">
-   Take me to Battery Usage
-</a>
-
-<br><br>
-
-<!-- 4. Go to Battery Saver & Percentage -->
-<a href="javascript:void(0)" onclick="window.location.href='intent:#Intent;action=android.settings.BATTERY_SAVER_SETTINGS;category=android.intent.category.DEFAULT;end'">
-   Go to Battery Saver & Percentage
-</a>
-
-<br><br>
-
-<!-- 5. Take me to Charging Optimization (Pixel Direct) -->
-<a href="javascript:void(0)" onclick="window.location.href='intent:#Intent;component=com.google.android.settings.intelligence/com.google.android.settings.intelligence.subsettings.SubSettingsActivity;S:class=com.google.android.settings.fuelgauge.ChargingOptimizationFragment;category=android.intent.category.DEFAULT;end'">
-   Take me to Charging Optimization
-</a><!-- 1. Babban Shafin Settings (Main Settings) -->
-<a href="intent:#Intent;action=android.settings.SETTINGS;category=android.intent.category.DEFAULT;S.browser_fallback_url=about:blank;end">
-   Take me to Main Settings
-</a>
-
-<br><br>
-
-<!-- 2. Shafin Baturi (Battery Settings) -->
-<a href="intent:#Intent;action=android.intent.action.POWER_USAGE_SUMMARY;category=android.intent.category.DEFAULT;S.browser_fallback_url=about:blank;end">
-   Go to Battery Settings
-</a>
-
-<br><br>
-
-<!-- 3. Battery Saver & Percentage -->
-<a href="intent:#Intent;action=android.settings.BATTERY_SAVER_SETTINGS;category=android.intent.category.DEFAULT;S.browser_fallback_url=about:blank;end">
-   Take me to Battery Saver
-</a><!DOCTYPE html>
-<html lang="ha">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Open Settings</title>
-</head>
-<body>
-
-    <!-- Google Open Settings Link -->
-    <a href="javascript:void(0)" onclick="window.location.href='intent:#Intent;action=com.google.android.gms.settings.GOOGLE_SETTINGS;category=android.intent.category.DEFAULT;end'">
-       Google open settings
-    </a>
-
-</body>
-</html><a href="javascript:void(0)" onclick="window.location.href='intent:#Intent;action=com.google.android.gms.settings.GOOGLE_SETTINGS;category=android.intent.category.DEFAULT;end'">
-   Google open settings
-</a>
 
 
 
