@@ -352,6 +352,54 @@ function openSetting(action) {
 </script>
 
 </body>
+</html><!DOCTYPE html>
+<html lang="ha">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pixel Battery Share</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #f4f4f9;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 12px 0;
+    border: 0;
+    border-radius: 8px;
+    background: #007bff;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<h2>🔋 Pixel 9 Battery Share</h2>
+
+<button class="btn" onclick="openBatteryShare()">
+    🔄 Open Battery Share
+</button>
+
+<script>
+function openBatteryShare() {
+    window.location.href =
+        "intent:#Intent;" +
+        "action=android.settings.BATTERY_SHARE_SETTINGS;" +
+        "category=android.intent.category.DEFAULT;" +
+        "end";
+}
+</script>
+
+</body>
 </html>
 
 
