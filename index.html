@@ -101,7 +101,53 @@
     </a>
 
 </body>
-</html>
+</html><!DOCTYPE html>
+<html lang="ha">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Pixel Settings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>My Pixel System Info</h2>
+
+    <!-- 1. Pixel Device Details (About Phone) -->
+    <a class="btn" href="javascript:void(0)" onclick="window.location.href='intent:#Intent;action=android.settings.DEVICE_INFO_SETTINGS;category=android.intent.category.DEFAULT;end'">
+       My Pixel (Device Info)
+    </a>
+
+    <!-- 2. Pixel Hardware & Model Specs -->
+    <a class="btn" href="javascript:void(0)" onclick="window.location.href='intent:#Intent;component=com.android.settings/.Settings$MyDeviceInfoActivity;category=android.intent.category.DEFAULT;end'">
+       Pixel Hardware Specs
+    </a>
+
+    <!-- 3. Pixel System Updates -->
+    <a class="btn" href="javascript:void(0)" onclick="window.location.href='intent:#Intent;action=android.settings.SYSTEM_UPDATE_SETTINGS;category=android.intent.category.DEFAULT;end'">
+       Pixel System Update
+    </a>
 
 
 
