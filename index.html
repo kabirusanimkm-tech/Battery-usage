@@ -400,6 +400,127 @@ function openBatteryShare() {
 </script>
 
 </body>
+</html><!DOCTYPE html>
+<html lang="ha">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pixel 9 Settings</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+        background: #f4f4f9;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        display: block;
+        width: 100%;
+        padding: 15px;
+        margin: 10px 0;
+        border: 0;
+        border-radius: 10px;
+        background: #007bff;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: left;
+        cursor: pointer;
+    }
+
+    .btn:active {
+        transform: scale(0.98);
+        background: #0056b3;
+    }
+</style>
+</head>
+
+<body>
+
+<h2>📱 Pixel 9 Settings</h2>
+
+<button class="btn"
+onclick="openSetting('android.settings.BATTERY_SHARE_SETTINGS')">
+    🔄 Battery Share / Reverse Charging
+</button>
+
+<button class="btn"
+onclick="openSetting('android.settings.BATTERY_SAVER_SETTINGS')">
+    🛡️ Battery Saver
+</button>
+
+<button class="btn"
+onclick="openSetting('android.intent.action.POWER_USAGE_SUMMARY')">
+    🔋 Battery Usage
+</button>
+
+<button class="btn"
+onclick="openSetting('android.settings.BATTERY_SETTINGS')">
+    ⚡ Battery Settings
+</button>
+
+<button class="btn"
+onclick="openSetting('android.settings.DISPLAY_SETTINGS')">
+    🖥️ Display Settings
+</button>
+
+<button class="btn"
+onclick="openSetting('android.settings.NIGHT_DISPLAY_SETTINGS')">
+    🌙 Night Light
+</button>
+
+<button class="btn"
+onclick="openSetting('android.settings.WIFI_SETTINGS')">
+    📶 Wi-Fi
+</button>
+
+<button class="btn"
+onclick="openSetting('android.settings.BLUETOOTH_SETTINGS')">
+    🟦 Bluetooth
+</button>
+
+<button class="btn"
+onclick="openSetting('android.settings.APPLICATION_SETTINGS')">
+    📦 Apps
+</button>
+
+<button class="btn"
+onclick="openSetting('android.settings.APPLICATION_DEVELOPMENT_SETTINGS')">
+    🛠️ Developer Options
+</button>
+
+<button class="btn"
+onclick="openSetting('android.settings.SETTINGS')">
+    ⚙️ Main Android Settings
+</button>
+
+
+<script>
+function openSetting(action) {
+
+    const intent =
+        "intent:#Intent;" +
+        "action=" + action + ";" +
+        "category=android.intent.category.DEFAULT;" +
+        "end";
+
+    window.location.href = intent;
+}
+</script>
+
+</body>
 </html>
 
 
