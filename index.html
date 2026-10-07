@@ -147,7 +147,56 @@
     <!-- 3. Pixel System Updates -->
     <a class="btn" href="javascript:void(0)" onclick="window.location.href='intent:#Intent;action=android.settings.SYSTEM_UPDATE_SETTINGS;category=android.intent.category.DEFAULT;end'">
        Pixel System Update
+    </a><!DOCTYPE html>
+<html lang="ha">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Hidden & System Apps</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>All Hidden & System Apps</h2>
+
+    <!-- 1. All Installed Apps List -->
+    <a class="btn" href="javascript:void(0)" onclick="window.location.href='intent:#Intent;action=android.settings.APPLICATION_SETTINGS;category=android.intent.category.DEFAULT;end'">
+       All Apps Settings
     </a>
+
+    <!-- 2. Special System Access (Hidden App Permissions) -->
+    <a class="btn" href="javascript:void(0)" onclick="window.location.href='intent:#Intent;action=android.settings.MANAGE_SPECIAL_APP_ACCESS_SETTINGS;category=android.intent.category.DEFAULT;end'">
+       Special App Access (Hidden System Apps)
+    </a>
+
+    <!-- 3. Default Apps System -->
+    <a class="btn" href="javascript:void(0)" onclick="window.location.href='intent:#Intent;action=android.settings.MANAGE_DEFAULT_APPS_SETTINGS;category=android.intent.category.DEFAULT;end'">
+       Default Apps Settings
+    </a>
+
+</body>
+</html>
 
 
 
