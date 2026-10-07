@@ -285,7 +285,74 @@
 <a class="btn"
    href="intent:#Intent;action=android.settings.APPLICATION_DEVELOPMENT_SETTINGS;end">
    🛠️ Developer Options
-</a>
+</a><!DOCTYPE html>
+<html lang="ha">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Android Settings</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #f4f4f9;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px;
+    margin: 10px 0;
+    background: #007bff;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: 0;
+    border-radius: 6px;
+    font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<h2>Android Settings</h2>
+
+<button class="btn" onclick="openSetting('android.settings.DISPLAY_SETTINGS')">
+    🖥️ Display Settings
+</button>
+
+<button class="btn" onclick="openSetting('android.intent.action.POWER_USAGE_SUMMARY')">
+    🔋 Battery Usage
+</button>
+
+<button class="btn" onclick="openSetting('android.settings.SETTINGS')">
+    ⚙️ Main Settings
+</button>
+
+<script>
+function openSetting(action) {
+    const intentUrl =
+        'intent:#Intent;action=' + action +
+        ';category=android.intent.category.DEFAULT;end';
+
+    // Try Android intent
+    window.location.href = intentUrl;
+
+    // Fallback message
+    setTimeout(() => {
+        alert(
+            'Browser ya hana bude wannan Settings kai tsaye. ' +
+            'Je zuwa Android Settings da hannu.'
+        );
+    }, 1500);
+}
+</script>
+
+</body>
+</html>
 
 
 
