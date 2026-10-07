@@ -622,79 +622,51 @@ function openSetting(action) {
     <kbd>Alt</kbd> + <kbd>A</kbd> → Apps<br>
     <kbd>Alt</kbd> + <kbd>O</kbd> → Developer Options<br>
     <kbd>Alt</kbd> + <kbd>G</kbd> → Main Settings
-</div>
+</div><!DOCTYPE html>
+<html lang="ha">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charging Limit & Battery Settings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
 
+    <h2>Charging Limit & Battery Settings</h2>
 
-<script>
+    <!-- 1. Battery Saver Settings -->
+    <a class="btn" href="javascript:void(0)" onclick="window.location.href='intent:#Intent;action=android.settings.BATTERY_SAVER_SETTINGS;category=android.intent.category.DEFAULT;end'">
+       Battery Saver & Charging Limit
+    </a>
 
-function openSetting(action) {
-
-    const intent =
-        "intent:#Intent;" +
-        "action=" + action +
-        ";category=android.intent.category.DEFAULT;end";
-
-    window.location.href = intent;
-}
-
-
-// Keyboard shortcuts
-document.addEventListener("keydown", function(event) {
-
-    if (!event.altKey) return;
-
-    const key = event.key.toLowerCase();
-
-    switch (key) {
-
-        case "b":
-            openSetting("android.settings.BATTERY_SHARE_SETTINGS");
-            break;
-
-        case "u":
-            openSetting("android.intent.action.POWER_USAGE_SUMMARY");
-            break;
-
-        case "s":
-            openSetting("android.settings.BATTERY_SAVER_SETTINGS");
-            break;
-
-        case "d":
-            openSetting("android.settings.DISPLAY_SETTINGS");
-            break;
-
-        case "w":
-            openSetting("android.settings.WIFI_SETTINGS");
-            break;
-
-        case "l":
-            openSetting("android.settings.BLUETOOTH_SETTINGS");
-            break;
-
-        case "a":
-            openSetting("android.settings.APPLICATION_SETTINGS");
-            break;
-
-        case "o":
-            openSetting("android.settings.APPLICATION_DEVELOPMENT_SETTINGS");
-            break;
-
-        case "g":
-            openSetting("android.settings.SETTINGS");
-            break;
-    }
-});
-
-</script>
+    <!-- 2. Power Usage Summary (Battery Health) -->
+    <a class="btn" href="javascript:void(0)" onclick="window.location.href='intent:#Intent;action=android.intent.action.POWER_USAGE_SUMMARY;category=android.intent.category.DEFAULT;end'">
+       Power Usage & Battery Health
+    </a>
 
 </body>
-</html><button class="btn"
-onclick="openSetting('android.settings.BATTERY_SETTINGS')">
-    🔋 Battery Limit / Charging
-</button>case "l":
-    openSetting("android.settings.BATTERY_SETTINGS");
-    break
-
+</html>
 
 
 
