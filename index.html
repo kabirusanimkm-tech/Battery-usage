@@ -834,7 +834,26 @@ function openSetting(action) {
 <!-- 4. Data-Based Intent (Buɗe Shafin Yanar Gizo na musamman) -->
 <a href="javascript:void(0)" onclick="window.location.href='intent:#Intent;action=android.intent.action.VIEW;data=https://google.com;end'">
    Data-Based Intent
-</a>
+</a><!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Go Home</title>
+</head>
+<body>
+
+<button onclick="goHome()">Go to Home Screen</button>
+
+<script>
+function goHome() {
+  // Browser ba ya bada permission na kai tsaye zuwa Home Screen.
+  // Wannan zai yi aiki ne kawai a wasu special webview/app environments.
+  window.close();
+}
+</script>
+
+</body>
+</html>
 
 
 
