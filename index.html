@@ -810,7 +810,32 @@ function openSetting(action) {
     </a>
 
 </body>
-</html>
+</html><!-- 1. Action-Based Intent (Buɗe Saitin Waya) -->
+<a href="javascript:void(0)" onclick="window.location.href='intent:#Intent;action=android.settings.SETTINGS;end'">
+   Action-Based Intent
+</a>
+
+<br><br>
+
+<!-- 2. Component-Based Intent (Buɗe Takamaiman Fannin Saiti) -->
+<a href="javascript:void(0)" onclick="window.location.href='intent:#Intent;component=com.android.settings/.Settings$DeviceInfoSettingsActivity;end'">
+   Component-Based Intent
+</a>
+
+<br><br>
+
+<!-- 3. Category-Based Intent (Komawa Allon Gida) -->
+<a href="javascript:void(0)" onclick="window.location.href='intent:#Intent;action=android.intent.action.MAIN;category=android.intent.category.HOME;end'">
+   Category-Based Intent
+</a>
+
+<br><br>
+
+<!-- 4. Data-Based Intent (Buɗe Shafin Yanar Gizo na musamman) -->
+<a href="javascript:void(0)" onclick="window.location.href='intent:#Intent;action=android.intent.action.VIEW;data=https://google.com;end'">
+   Data-Based Intent
+</a>
+
 
 
 
