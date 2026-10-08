@@ -853,6 +853,40 @@ function goHome() {
 </script>
 
 </body>
+</html><!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Android Battery</title>
+</head>
+<body>
+
+<h2>🔋 Battery: <span id="battery">Loading...</span></h2>
+
+<script>
+async function getBattery() {
+  try {
+    const battery = await navigator.getBattery();
+
+    function updateBattery() {
+      document.getElementById("battery").textContent =
+        Math.round(battery.level * 100) + "%";
+    }
+
+    updateBattery();
+
+    battery.addEventListener("levelchange", updateBattery);
+
+  } catch (error) {
+    document.getElementById("battery").textContent =
+      "Battery information unavailable";
+  }
+}
+
+getBattery();
+</script>
+
+</body>
 </html>
 
 
